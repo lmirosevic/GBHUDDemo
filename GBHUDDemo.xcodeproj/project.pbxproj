@@ -18,7 +18,40 @@
 		8AA7A620165D0DCA005601FC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AA7A61F165D0DCA005601FC /* Default-568h@2x.png */; };
 		8AA7A623165D0DCA005601FC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA7A621165D0DCA005601FC /* MainStoryboard.storyboard */; };
 		8AA7A626165D0DCA005601FC /* GBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA7A625165D0DCA005601FC /* GBViewController.m */; };
+		8AA7A63F165D0E0E005601FC /* GBHUDResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8AA7A63A165D0DF8005601FC /* GBHUDResources.bundle */; };
+		8AA7A640165D0ECB005601FC /* libGBHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA7A638165D0DF8005601FC /* libGBHUD.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AA7A637165D0DF8005601FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AA7A62F165D0DF8005601FC /* GBHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A4CE3AA165CB7E30043DF4A;
+			remoteInfo = GBHUD;
+		};
+		8AA7A639165D0DF8005601FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AA7A62F165D0DF8005601FC /* GBHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8AA7A5C5165D051C005601FC;
+			remoteInfo = GBHUDResources;
+		};
+		8AA7A63B165D0E03005601FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AA7A62F165D0DF8005601FC /* GBHUD.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A4CE3A9165CB7E30043DF4A;
+			remoteInfo = GBHUD;
+		};
+		8AA7A63D165D0E06005601FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AA7A62F165D0DF8005601FC /* GBHUD.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AA7A5C4165D051C005601FC;
+			remoteInfo = GBHUDResources;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8AA7A605165D0DCA005601FC /* GBHUDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBHUDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +70,7 @@
 		8AA7A622165D0DCA005601FC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8AA7A624165D0DCA005601FC /* GBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBViewController.h; sourceTree = "<group>"; };
 		8AA7A625165D0DCA005601FC /* GBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBViewController.m; sourceTree = "<group>"; };
+		8AA7A62F165D0DF8005601FC /* GBHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GBHUD.xcodeproj; path = ../../GBHUD/GBHUD.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AA7A640165D0ECB005601FC /* libGBHUD.a in Frameworks */,
 				8AA7A60A165D0DCA005601FC /* UIKit.framework in Frameworks */,
 				8AA7A60C165D0DCA005601FC /* Foundation.framework in Frameworks */,
 				8AA7A60E165D0DCA005601FC /* CoreGraphics.framework in Frameworks */,
@@ -83,11 +118,9 @@
 		8AA7A60F165D0DCA005601FC /* GBHUDDemo */ = {
 			isa = PBXGroup;
 			children = (
-				8AA7A618165D0DCA005601FC /* GBAppDelegate.h */,
-				8AA7A619165D0DCA005601FC /* GBAppDelegate.m */,
-				8AA7A621165D0DCA005601FC /* MainStoryboard.storyboard */,
-				8AA7A624165D0DCA005601FC /* GBViewController.h */,
-				8AA7A625165D0DCA005601FC /* GBViewController.m */,
+				8AA7A62E165D0DE8005601FC /* Libraries */,
+				8AA7A62C165D0DDC005601FC /* Source */,
+				8AA7A62D165D0DE3005601FC /* Resources */,
 				8AA7A610165D0DCA005601FC /* Supporting Files */,
 			);
 			path = GBHUDDemo;
@@ -107,6 +140,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8AA7A62C165D0DDC005601FC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8AA7A618165D0DCA005601FC /* GBAppDelegate.h */,
+				8AA7A619165D0DCA005601FC /* GBAppDelegate.m */,
+				8AA7A624165D0DCA005601FC /* GBViewController.h */,
+				8AA7A625165D0DCA005601FC /* GBViewController.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8AA7A62D165D0DE3005601FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8AA7A621165D0DCA005601FC /* MainStoryboard.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8AA7A62E165D0DE8005601FC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				8AA7A62F165D0DF8005601FC /* GBHUD.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		8AA7A630165D0DF8005601FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AA7A638165D0DF8005601FC /* libGBHUD.a */,
+				8AA7A63A165D0DF8005601FC /* GBHUDResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,6 +190,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				8AA7A63E165D0E06005601FC /* PBXTargetDependency */,
+				8AA7A63C165D0E03005601FC /* PBXTargetDependency */,
 			);
 			name = GBHUDDemo;
 			productName = GBHUDDemo;
@@ -147,6 +218,12 @@
 			mainGroup = 8AA7A5FA165D0DCA005601FC;
 			productRefGroup = 8AA7A606165D0DCA005601FC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8AA7A630165D0DF8005601FC /* Products */;
+					ProjectRef = 8AA7A62F165D0DF8005601FC /* GBHUD.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8AA7A604165D0DCA005601FC /* GBHUDDemo */,
@@ -154,11 +231,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		8AA7A638165D0DF8005601FC /* libGBHUD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGBHUD.a;
+			remoteRef = 8AA7A637165D0DF8005601FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8AA7A63A165D0DF8005601FC /* GBHUDResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GBHUDResources.bundle;
+			remoteRef = 8AA7A639165D0DF8005601FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		8AA7A603165D0DCA005601FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AA7A63F165D0E0E005601FC /* GBHUDResources.bundle in Resources */,
 				8AA7A614165D0DCA005601FC /* InfoPlist.strings in Resources */,
 				8AA7A61C165D0DCA005601FC /* Default.png in Resources */,
 				8AA7A61E165D0DCA005601FC /* Default@2x.png in Resources */,
@@ -181,6 +276,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AA7A63C165D0E03005601FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GBHUD;
+			targetProxy = 8AA7A63B165D0E03005601FC /* PBXContainerItemProxy */;
+		};
+		8AA7A63E165D0E06005601FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GBHUDResources;
+			targetProxy = 8AA7A63D165D0E06005601FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8AA7A612165D0DCA005601FC /* InfoPlist.strings */ = {
@@ -224,9 +332,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../**";
 			};
 			name = Debug;
 		};
@@ -245,9 +354,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -293,6 +403,7 @@
 				8AA7A62B165D0DCA005601FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,4 +10,6 @@
 
 @interface GBViewController : UIViewController
 
+- (IBAction)showHUDAction:(id)sender;
+
 @end
