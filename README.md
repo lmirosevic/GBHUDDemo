@@ -6,7 +6,7 @@ Demo project for GBHUD
 Library
 ------------
 
-See: www.github.com/lmirosevic/GBHUD
+See: [github.com/lmirosevic/GBHUD](https://github.com/lmirosevic/GBHUD)
 
 Copyright & License
 ------------
